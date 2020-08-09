@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <title>Trulister :: Coming Soon!</title>
+  <!-- UIkit CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css"
+  />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+  <style>
+    :root {
+      /* fonts */
+      --header-font: "Montserrat", sans-serif;
+      --highlight-font: "Raleway", sans-serif;
+      --primary-font: "Open Sans", sans-serif;
+
+      /* colors */
+      --color-dark: rgba(10, 32, 84, 1); /* #0a2054 */
+      --color-secondary: rgba(18, 57, 138, 1); /* #12398a */
+      --color-primary: rgba(31, 86, 181, 1); /* #1f56b5 */
+      --color-secondary-accent: rgba(54, 125, 215, 1); /* #367dd7 */
+      --color-primary-accent: rgba(96, 156, 229, 1); /* #609ce5 */
+      --color-light: rgba(182, 209, 247, 1); /* #b6d1f7 */
+      --color-highlight: #b2ebf2; /* */
+      --bg-gradient: linear-gradient(
+        135deg,
+        var(--color-dark),
+        var(--color-primary-accent)
+      );
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bgimg {
+      background: var(--bg-gradient);
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: var(--color-light);
+      font-family: "Courier New", Courier, monospace;
+      font-size: 25px;
+    }
+
+    .topleft {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+    }
+
+    .bottomright {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      font-size: 18px;
+    }
+
+    .middle {
+      text-align: center;
+      padding-top: 30vh;
+    }
+    .uk-countdown-number {
+      font-size: 54px !important;
+    }
+  </style>
+  <body>
+    <div class="bgimg">
+      <div class="topleft">
+        <img src="logo-light.png" alt="logo" />
+      </div>
+      <div class="middle">
+        <div class="uk-container uk-text-center uk-position-center">
+          <div
+            class="uk-grid-small uk-child-width-auto"
+            uk-grid
+            uk-countdown="date: 2020-10-16T15:53:11+00:00"
+          >
+            <div>
+              <div class="uk-countdown-number uk-countdown-days"></div>
+              <div
+                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
+              >
+                Days
+              </div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+              <div class="uk-countdown-number uk-countdown-hours"></div>
+              <div
+                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
+              >
+                Hours
+              </div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+              <div class="uk-countdown-number uk-countdown-minutes"></div>
+              <div
+                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
+              >
+                Minutes
+              </div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+              <div class="uk-countdown-number uk-countdown-seconds"></div>
+              <div
+                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
+              >
+                Seconds
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2
+          style="
+            color: var(--color-primary-accent);
+            font-family: var(--primary-font);
+          "
+        >
+          TIME TO LAUNCH
+        </h2>
+      </div>
+      <p class="bottomright">&#169; 2020 TRULISTER</p>
+    </div>
+  </body>
+</html>
