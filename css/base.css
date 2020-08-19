@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+:root {
+  --color-accent: rgba(255, 140, 105, 1);
+  --color-accent-opacity: rgba(255, 140, 105, 0.8);
+  --primary-font: "Lato", sans-serif;
+}
+
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgba(82, 79, 247, 1);
+  color: white;
+  font-family: var(--primary-font);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: right;
+  padding: 0.5rem;
+}
+
+#jotform {
+  margin: 2rem;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 1rem;
+  width: 100vw;
+}
+
+.jumbotron {
+  margin-top: -20px;
+  background-color: salmon !important;
+}
+
+.btn-medium {
+  color: white !important;
+  background-color: var(--color-accent-opacity) !important;
+  border-radius: 50px !important;
+  padding: 10px 30px;
+}
+
+.btn-medium:hover {
+  background-color: var(--color-accent) !important;
+}
