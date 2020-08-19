@@ -1,134 +1,137 @@
 <!DOCTYPE html>
-<html>
-  <title>Trulister :: Coming Soon!</title>
-  <!-- UIkit CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css"
-  />
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trulister :: Listing Solutions</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
-  <style>
-    :root {
-      /* fonts */
-      --header-font: "Montserrat", sans-serif;
-      --highlight-font: "Raleway", sans-serif;
-      --primary-font: "Open Sans", sans-serif;
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-      /* colors */
-      --color-dark: rgba(10, 32, 84, 1); /* #0a2054 */
-      --color-secondary: rgba(18, 57, 138, 1); /* #12398a */
-      --color-primary: rgba(31, 86, 181, 1); /* #1f56b5 */
-      --color-secondary-accent: rgba(54, 125, 215, 1); /* #367dd7 */
-      --color-primary-accent: rgba(96, 156, 229, 1); /* #609ce5 */
-      --color-light: rgba(182, 209, 247, 1); /* #b6d1f7 */
-      --color-highlight: #b2ebf2; /* */
-      --bg-gradient: linear-gradient(
-        135deg,
-        var(--color-dark),
-        var(--color-primary-accent)
-      );
-    }
+    <!-- <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" /> -->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" href="icon.png" />
 
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-    }
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
-    .bgimg {
-      background: var(--bg-gradient);
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      color: var(--color-light);
-      font-family: "Courier New", Courier, monospace;
-      font-size: 25px;
-    }
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
 
-    .topleft {
-      position: absolute;
-      top: 5%;
-      left: 5%;
-    }
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <meta name="theme-color" content="#524ff7" />
+  </head>
 
-    .bottomright {
-      position: absolute;
-      bottom: 5%;
-      right: 5%;
-      font-size: 18px;
-    }
-
-    .middle {
-      text-align: center;
-      padding-top: 30vh;
-    }
-    .uk-countdown-number {
-      font-size: 54px !important;
-    }
-  </style>
   <body>
-    <div class="bgimg">
-      <div class="topleft">
-        <img src="logo-light.png" alt="logo" />
+    <nav class="navbar container-fluid">
+      <img src="logo.png" alt="Trulister logo" />
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">The Tru-Listing Solution.</h1>
+        <div class="row">
+          <div class="col-lg-10">
+            <p class="lead">
+              <b> Regardless </b> of your role in Real Estate, we know a
+              successful business works on <b>behalf</b> of its owners. Your
+              business should give you more time, more money, and freedom to
+              enjoy it.
+            </p>
+            <p class="lead">
+              If you find yourself putting in more than what you're getting out,
+              it's time for a
+              <u>new approach.</u>
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="middle">
-        <div class="uk-container uk-text-center uk-position-center">
-          <div
-            class="uk-grid-small uk-child-width-auto"
-            uk-grid
-            uk-countdown="date: 2020-10-16T15:53:11+00:00"
-          >
-            <div>
-              <div class="uk-countdown-number uk-countdown-days"></div>
-              <div
-                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
-              >
-                Days
-              </div>
-            </div>
-            <div class="uk-countdown-separator">:</div>
-            <div>
-              <div class="uk-countdown-number uk-countdown-hours"></div>
-              <div
-                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
-              >
-                Hours
-              </div>
-            </div>
-            <div class="uk-countdown-separator">:</div>
-            <div>
-              <div class="uk-countdown-number uk-countdown-minutes"></div>
-              <div
-                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
-              >
-                Minutes
-              </div>
-            </div>
-            <div class="uk-countdown-separator">:</div>
-            <div>
-              <div class="uk-countdown-number uk-countdown-seconds"></div>
-              <div
-                class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s"
-              >
-                Seconds
-              </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="lead">
+              Trulister's role is defining your company's success metrics
+              through market
+              <b>intelligence</b>. Together, we will guide your business to be
+              the earning machine it's destined to be. We'll build you the right
+              tools to make the right decisions, at the right time, all while
+              looking more polished than your competitors.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <p class="lead">
+              Don't just read this and go about your day, the first step is to
+              take action. Invest some time and <b>Schedule</b> a free
+              consultation with one of our specialists.
+            </p>
+            <a
+              class="btn btn-lg btn-medium"
+              data-toggle="collapse"
+              data-target="#jotform"
+              >LEARN MORE</a
+            >
+          </div>
+        </div>
+        <div class="row collapse" id="jotform">
+          <div class="col-lg-12">
+            <div class="card card-body">
+              <script
+                type="text/javascript"
+                src="https://form.jotform.com/jsform/201915484677162"
+              ></script>
             </div>
           </div>
         </div>
-        <h2
-          style="
-            color: var(--color-primary-accent);
-            font-family: var(--primary-font);
-          "
-        >
-          TIME TO LAUNCH
-        </h2>
       </div>
-      <p class="bottomright">&#169; 2020 TRULISTER</p>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
